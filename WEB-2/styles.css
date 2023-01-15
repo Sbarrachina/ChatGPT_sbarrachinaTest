@@ -1,0 +1,177 @@
+/* Establecer una fuente global para toda la página */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    background-color: #333; /* Establecer el color de fondo */
+    color: white; /* Establecer el color del texto */
+    padding: 1em; /* Establecer el padding */
+    text-align: center; /* Centrar el texto */
+  }
+  header h1 {
+    margin: 0; /* Eliminar el margen superior */
+    font-size: 2em; /* Aumentar el tamaño del título */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    letter-spacing: 3px; /* Aumentar el espacio entre las letras */
+  }
+  header nav {
+    display: flex; /* Cambiar a Flexbox */
+    justify-content: space-between; /* Ajustar los elementos al espacio entre ellos */
+  }
+  header nav a {
+    color: white; /* Establecer el color del texto */
+    text-decoration: none; /* Eliminar la decoración del texto */
+    margin-left: 1em; /* Agregar margen a la izquierda */
+    transition: color 0.2s ease-in-out; /* Agregar transición de color */
+  }
+  header nav a:hover {
+    color: #ffa500; /* Cambiar el color del texto al hacer hover */
+  }
+  
+  /* Estilos para el menú de navegación */
+  nav {
+    background-color: #f1f1f1;
+    padding: 0.5em;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Ajustar el menú a la pantalla */
+    justify-content: center; /* Centrar los elementos del menú */
+  }
+  nav li {
+    margin-right: 1em;
+  }
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em; /* Agregar espacio alrededor del texto del menú */
+  }
+  nav a:hover {
+    background-color: #ffa500;
+    color: white;
+  }
+  
+  /* Estilos para las secciones de productos */
+
+  
+  
+  section.products li {
+    display: flex;
+    flex-direction: row; /* Cambiar la dirección de los elementos a fila */
+    align-items: center; /* Centrar los elementos en el eje transversal */
+  }
+  section.products img {
+    width: 100px; /* Establecer el ancho de la imagen */
+    margin-right: 10px; /* Agregar espacio entre la imagen y el título */
+  }
+  section.products h3 {
+    margin: 0; /* Eliminar el margen superior del título */
+    font-size: 1.2em; /* Aumentar el tamaño del texto */
+  }
+  
+
+  
+
+  
+/* Estilos para el carrito de compras */
+aside {
+    background-color: #f1f1f1;
+    padding: 0.5em;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 300px; /* Aumentar el tamaño del carrito */
+    border-radius: 10px; /* Agregar bordes redondeados */
+  }
+  aside h2 {
+    margin: 0; /* Eliminar el margen superior del título */
+  }
+  aside .cart {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  aside .cart li {
+    background-color: #e6e6e6; /* Agregar un fondo gris a los elementos del carrito */
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 5px; /* Agregar bordes redondeados a los elementos del carrito */
+  }
+  aside .cart .remove-item {
+    float: right; /* Posicionar el botón de eliminar a la derecha */
+    cursor: pointer; /* Cambiar el cursor a mano */
+  }
+  aside .cart .remove-item:hover {
+    color: red; /* Cambiar el color del texto al pasar el mouse */
+  }
+
+
+/* Estilos para el botón de "Añadir al carrito" */
+button.add-cart {
+    background-color: #ffa500; /* Establecer el color de fondo */
+    color: white; /* Establecer el color del texto */
+    padding: 0.5em 1em; /* Establecer el padding */
+    border-radius: 5px; /* Establecer el borde redondeado */
+    transition: background-color 0.2s ease-in-out; /* Agregar transición de fondo */
+  }
+  button.add-cart:hover {
+    background-color: #ff8c00; /* Cambiar el color de fondo al hacer hover */
+    cursor: pointer; /* Cambiar el cursor al hacer hover */
+  }
+  
+  /* Estilos para el botón de "Carrito" */
+  .add-to-cart,.checkout {
+    background-color: #ffa500; /* Establecer el color de fondo */
+    color: white; /* Establecer el color del texto */
+    padding: 0.5em 1em; /* Establecer el padding */
+    border-radius: 50%; /* Establecer el borde redondeado */
+    position: relative; /* Establecer posición relativa para agregar el número de artículos */
+    transition: background-color 0.2s ease-in-out; /* Agregar transición de fondo */
+  }
+
+  .add-to-cart,.checkout:hover {
+    background-color: #ff8c00; /* Cambiar el color de fondo al hacer hover */
+    cursor: pointer;
+    }
+    /* / Estilos para el número de artículos en el botón de "Carrito" / */
+    .add-to-cart:before {
+    content: "";
+    position: absolute; 
+    top: -10px; 
+    right: -10px; 
+    background-color: white; 
+    color: #ffa500;
+    border-radius: 50%; 
+    padding: 0.3em; 
+    font-size: 0.8em;
+    }
+
+
+
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+
+  @media (max-width: 768px) {
+    /* Ajustar el tamaño de los elementos de producto en pantallas pequeñas */
+    section.products li {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Ocultar el carrito de compras en pantallas muy pequeñas */
+    aside {
+      display: none;
+    }
+  }
