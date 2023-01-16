@@ -1,0 +1,24 @@
+.container {
+    width: 80%; /* Establece el ancho del contenedor en un 80% del tamaño de la pantalla */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+  
+  .texto-largo {
+    font-size: 23px; /* Establece el tamaño de la fuente en 16px */
+    line-height: 1.5; /* Establece el alto de línea en 1.5 */
+  }
+  
+  header img{
+    width: 100vw
+  }
+  button{
+    padding: 10px 40px;
+    background-color: rgb(229, 46, 201);
+    color: rgb(214, 233, 233);
+    
+  }
+
+  button:hover{
+    background-color: azure;
+    color: black;
+  }
