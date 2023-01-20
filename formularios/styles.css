@@ -251,22 +251,36 @@ object-fit: cover;
   @media (max-width:750px){
     img{
         width: 100%;
+        
     }
-    #formulario-contacto,#formulario-reforma,#formulario-reforma-profesional  {
+    #formulario-contacto {
+      
         width: 100%;
        
       }
-
+      #formulario-reforma{
+        width: 100%;
      
   }
+ 
 
+  .container{
+    display: flex;
+  }
+  header h1 {
+    color: #333;
+    font-size: 30px;
+  }
+
+
+  }
   @media (max-width:750px){
     .foto-content{
       width: 100%;
       margin-top:0;
     }
     #foto{
-    object-fit: cover;
+    width: 100vw;
     }
     .container{
       display: flex;
@@ -274,7 +288,16 @@ object-fit: cover;
       padding-left: 0px;
     }
     #formulario-contacto {
-      width: 100%;
-      margin: 0;
+      width: 100vw;
+      margin-left: 0px ;
+    
+  
+    }
+    #formulario-reforma-profesional {
+      width: 100vw;
+      
+          
+    }
+    
   }
-}
+  
