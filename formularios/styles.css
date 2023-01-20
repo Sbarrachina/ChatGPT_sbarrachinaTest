@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+header {
+    background-color: #f2f2f2;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  header h1 {
+    color: #333;
+    font-size: 60px;
+    margin: 0;
+  }
+  
+/* formulario uno  */
+
+
+
+#formulario-contacto {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 100px;
+    height: 100%;
+    background-color: #f9f9f9;
+
+  }
+  
+  #formulario-contacto label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #formulario-contacto input[type="text"],
+  #formulario-contacto input[type="email"],
+  #formulario-contacto input[type="tel"],
+  #formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    resize: vertical;
+    }
+    
+    #formulario-contacto input[type="submit"] {
+        background-color: #3071a9;
+        color: #fff;
+        padding: 0.75em 2em;
+        border-radius: 5px;
+        border: none;
+        font-weight: bold;
+        margin-top: 1em;
+        transition: background-color 0.3s ease;
+    }
+    
+    #formulario-contacto input[type="submit"]:hover {
+    background-color: #45a049;
+    }
+  
+    /* formulario dos */
+
+    #formulario-reforma {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+      }
+      
+      #formulario-reforma label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+      }
+      
+      #formulario-reforma input[type="text"],
+      #formulario-reforma input[type="email"],
+      #formulario-reforma input[type="tel"],
+      #formulario-reforma textarea,
+      #formulario-reforma select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+        resize: vertical;
+        font-size: 16px;
+      }
+      
+      #formulario-reforma input[type="file"] {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+        font-size: 16px;
+      }
+      
+      #formulario-reforma input[type="submit"] {
+        background-color: #3071a9;
+        color: #fff;
+        padding: 0.75em 2em;
+        border-radius: 5px;
+        border: none;
+        font-weight: bold;
+        margin-top: 1em;
+        transition: background-color 0.3s ease;
+        }
+        
+        #formulario-reforma input[type="submit"]:hover {
+        background-color: #45a049;
+        }
+        
+        #formulario-reforma select {
+        background-color: #fff;
+        }
+        
+        #formulario-reforma textarea {
+        background-color: #fff;
+        }
+
+       /* formulario tres */
+
+       /* Estilos para el formulario */
+
+
+#formulario-reforma-profesional {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 100px;
+    height: 100%;
+    background-color: #f9f9f9;
+    margin-top: 100px;
+    margin-bottom: 100px;
+        
+  }
+  
+  #formulario-reforma-profesional h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+  
+  #formulario-reforma-profesional label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #formulario-reforma-profesional input[type="text"],
+  #formulario-reforma-profesional input[type="email"],
+  #formulario-reforma-profesional input[type="tel"],
+  #formulario-reforma-profesional input[type="number"],
+
+  #formulario-reforma-profesional select,
+  #formulario-reforma-profesional textarea 
+  
+  
+  
+  {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+        resize: vertical;
+        font-size: 16px;
+  }
+  
+
+  #formulario-reforma-profesional input[type="date"]{
+
+        width: 40%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+        resize: vertical;
+        font-size: 16px;
+  }
+
+
+  #formulario-reforma-profesional textarea {
+    resize: none;
+  }
+  
+  #formulario-reforma-profesional input[type="submit"] {
+    background-color: #3071a9;
+    color: #fff;
+    padding: 0.75em 2em;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    margin-top: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  #formulario-reforma-profesional input[type="submit"]:hover {
+    background-color: #367ebd;
+    cursor: pointer;
+  }
+  
+  #formulario-reforma-profesional .politica-privacidad {
+    font-size: 0.8em;
+    margin-top: 1em;
+  }
+  
+  #formulario-reforma-profesional .politica-privacidad a {
+    color: #3071a9;
+  }
+  
+  #formulario-reforma-profesional .politica-privacidad a:hover {
+    color: #367ebd;
+  }
+  
+  @media (max-width:750px){
+    img{
+        width: 100%;
+    }
+    #formulario-contacto,#formulario-reforma,#formulario-reforma-profesional  {
+        width: 100%;
+       
+      }
+  }

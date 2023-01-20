@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Chatgt</title>
+    <link rel="stylesheet" href="/formularios/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>FORMULARIOS DE CONTACTO </h1>
+      </header>
+      
+
+
+
+
+    <!--  FORMULARIO UNO  -->
+    <form id="formulario-contacto" action="enviar-mensaje.php" method="post">
+        <img src="/formularios/img/LOGO-ROS-INTERIOR-DESIGN.png" alt="">
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      
+        <label for="direccion">Dirección de la vivienda a reformar:</label>
+        <input type="text" id="direccion" name="direccion" required>
+      
+        <label for="descripcion">Descripción de lo que desea reformar:</label>
+        <textarea id="descripcion" name="descripcion" rows="5" required></textarea>
+      
+        <label for="presupuesto">Presupuesto estimado:</label>
+        <input type="number" id="presupuesto" name="presupuesto" required>
+      
+        <label for="fecha">Fecha deseada para comenzar la reforma:</label>
+        <input type="date" id="fecha" name="fecha" required>
+      
+        <label for="comentarios">Comentarios o preguntas adicionales:</label>
+        <textarea id="comentarios" name="comentarios" rows="5"></textarea>
+      
+        <input type="submit" value="Enviar">
+      </form>
+      
+
+
+      <!-- formulario dos -->
+      <form id="formulario-reforma" action="enviar-mensaje.php" method="post" enctype="multipart/form-data">
+        <img src="/formularios/img/LOGO-ROS-INTERIOR-DESIGN.png" alt="">
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      
+        <label for="direccion">Dirección de la vivienda a reformar:</label>
+        <input type="text" id="direccion" name="direccion" required>
+      
+        
+        <label for="tipo-reforma">Tipo de reforma:</label>
+        <select id="tipo-reforma" name="tipo-reforma" required>
+          <option value="">Seleccione una opción</option>
+          <option value="cocina">Cocina</option>
+          <option value="bano">Baño</option>
+          <option value="dormitorios">Dormitorios</option>
+          <option value="otro">Otro</option>
+        </select>
+      
+        <label for="fotos">Fotos de la vivienda:</label>
+        <input type="file" id="fotos" name="fotos[]" accept="image/*" multiple>
+
+
+
+        
+        <label for="presupuesto">Presupuesto estimado:</label>
+         <input type="number" id="presupuesto" name="presupuesto" required>
+
+      
+        <label for="fecha">Fecha deseada para comenzar la reforma:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+      
+        <label for="comentarios">Comentarios o preguntas adicionales:</label>
+        <textarea id="comentarios" name="comentarios" rows="5"></textarea>
+      
+        <input type="submit" value="Enviar">
+
+        <div class="politica-privacidad">
+            <label for="acepto-politica-privacidad">
+              <input type="checkbox" id="acepto-politica-privacidad" name="acepto-politica-privacidad" required> Acepto la política de privacidad y seguridad de los datos del cliente.
+            </label>
+            <a href="politica-privacidad.html" target="_blank">Leer política de privacidad y seguridad de los datos del cliente</a>
+
+            </div>
+
+        
+      </form>
+      
+
+      <!-- formulario tres -->
+
+      <form id="formulario-reforma-profesional" action="https://formspree.io/f/mpzbokrb" method="post">
+        <img src="/formularios/img/LOGO-ROS-INTERIOR-DESIGN.png" alt="">
+        <h2>PEDIR PRESUPUESTO</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="tipo-vivienda">Tipo de Vivienda:</label>
+        <select id="tipo-vivienda" name="tipo-vivienda" required>
+            <option value="">Seleccione una opción</option>
+            <option value="piso">Piso</option>
+            <option value="casa">Casa</option>
+            <option value="loft">Loft</option>
+          </select>
+      
+        <label for="tipo-reforma">Tipo de Reforma:</label>
+        <select id="tipo-reforma" name="tipo-reforma" required>
+          <option value="">Selecciona una opción</option>
+          <option value="cocina">Cocina</option>
+          <option value="baño">Baño</option>
+          <option value="dormitorios">Dormitorios</option>
+          <option value="otros">Otros</option>
+        </select>
+
+        <label for="presupuesto">Presupuesto Estimado:</label>
+        <input type="number" id="presupuesto" name="presupuesto" required>
+        
+
+        <label for="fecha">Fecha deseada para comenzar la reforma:</label>
+        <input type="date" id="fecha" name="fecha" required>
+       
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+      
+        <label for="acepto-politica-privacidad">
+          <input type="checkbox" id="acepto-politica-privacidad" name="acepto-politica-privacidad" required>
+          Acepto la política de privacidad y seguridadde los datos del cliente
+        </label>
+        
+          <input type="submit" id="boton-enviar" value="Enviar">
+          <p class="politica-privacidad">
+            Al enviar este formulario, aceptas nuestra <a href="#">política de privacidad y seguridad de los datos del cliente</a>.
+          </p>
+        </form>
+      
+      
+      
+      <script src="/formularios/script.js"></script>
+</body>
+</html>
