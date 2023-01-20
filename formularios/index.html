@@ -18,8 +18,17 @@
 
 
     <!--  FORMULARIO UNO  -->
-    <form id="formulario-contacto" action="enviar-mensaje.php" method="post">
-        <img src="/formularios/img/LOGO-ROS-INTERIOR-DESIGN.png" alt="">
+
+    <div class="container">
+      <div class="foto-content">
+
+      <img src="https://img.freepik.com/fotos-premium/interior-diseno-moderno-sala-estar-sofa-gris-sobre-pisos-concreto-paredes-azules_33739-365.jpg" id="foto" alt="">
+      <img src="https://img.freepik.com/fotos-premium/maqueta-pared-interior-sala-estar-sofa-decoracion-tonos-calidos-representacion-3d_41470-3870.jpg" id="foto" alt="">
+
+    </div>
+   
+      <form id="formulario-contacto" action="enviar-mensaje.php" method="post">
+        <img src="/formularios/img/LOGO-ROS-INTERIOR-DESIGN.png" id="foto" alt="">
 
         <label for="nombre">Nombre completo:</label>
         <input type="text" id="nombre" name="nombre" required>
@@ -47,9 +56,8 @@
       
         <input type="submit" value="Enviar">
       </form>
-      
 
-
+    </div>
       <!-- formulario dos -->
       <form id="formulario-reforma" action="enviar-mensaje.php" method="post" enctype="multipart/form-data">
         <img src="/formularios/img/LOGO-ROS-INTERIOR-DESIGN.png" alt="">
@@ -108,6 +116,7 @@
       
 
       <!-- formulario tres -->
+      <div class="container-2">
 
       <form id="formulario-reforma-profesional" action="https://formspree.io/f/mpzbokrb" method="post">
         <img src="/formularios/img/LOGO-ROS-INTERIOR-DESIGN.png" alt="">
@@ -159,7 +168,7 @@
             Al enviar este formulario, aceptas nuestra <a href="#">política de privacidad y seguridad de los datos del cliente</a>.
           </p>
         </form>
-      
+      </div>
       
       
       <script src="/formularios/script.js"></script>

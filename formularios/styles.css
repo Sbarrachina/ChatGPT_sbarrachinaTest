@@ -23,11 +23,22 @@ header {
   
 /* formulario uno  */
 
-
+.foto-content{
+  width: 40%;
+  margin-top: 100px;
+}
+#foto{
+object-fit: cover;
+}
+.container{
+  display: flex;
+  padding-left: 150px;
+  padding: 100px;
+}
 
 #formulario-contacto {
     width: 50%;
-    margin: 0 auto;
+    margin-left: 100px ;
     padding: 20px;
     border: 1px solid #ccc;
     margin-bottom: 100px;
@@ -70,6 +81,10 @@ header {
     }
   
     /* formulario dos */
+    .container-2{
+      background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+      background-size: cover;
+    }
 
     #formulario-reforma {
         width: 50%;
@@ -239,4 +254,25 @@ header {
         width: 100%;
        
       }
+
+     
   }
+
+  @media (max-width:750px){
+    .foto-content{
+      width: 100%;
+      margin-top:0;
+    }
+    #foto{
+    object-fit: cover;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      padding-left: 0px;
+    }
+    #formulario-contacto {
+      width: 100%;
+      margin: 0;
+  }
+}
