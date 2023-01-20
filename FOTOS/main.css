@@ -1,0 +1,137 @@
+
+
+
+header{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 50px;
+    background-image: url("https://thumbs.dreamstime.com/b/fondo-horizontal-texturizado-madera-colorida-del-arco-iris-78058264.jpg");
+}
+
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .img-box {
+    position: relative;
+  }
+  
+  .img-box img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .img-box:hover img {
+    transform: scale(1.1);
+  }
+
+
+/* galeria dos */
+
+
+.gallery-container-2 {
+    margin-top: -300px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .img-box-2 {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .img-box-2 img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+  
+  }
+
+  .img-box-2:hover img {
+    transform: scale(1.1);
+    }
+    
+    /* Pantalla completa */
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    }
+    
+    .modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+    }
+    
+    .mySlides {
+    display: none;
+    }
+    
+    .mySlides img{
+        width: 100%;
+        padding-top: 100px;
+    }
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -50px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    }
+    
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+    
+    .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    }
+    
+    .close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+
+  footer{
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    background-image: url("https://thumbs.dreamstime.com/b/fondo-horizontal-texturizado-madera-colorida-del-arco-iris-78058264.jpg");
+}
+  

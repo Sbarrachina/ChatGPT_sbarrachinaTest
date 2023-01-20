@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <link rel="stylesheet" href="/FOTOS/main.css">
+</head>
+<body>
+   
+<header>
+  <h1>GALERIA DE FOTOS</h1>
+</header>
+
+  <div class="gallery-container">
+    <div class="img-box">
+      <img src="/FOTOS/img/DSC_0001.JPG" alt="image 1">
+    </div>
+    <div class="img-box">
+      <img src="/FOTOS/img/DSC_0295.JPG" alt="image 2">
+    </div>
+    <div class="img-box">
+      <img src="/FOTOS/img/DSC_0297.JPG" alt="image 3">
+    </div>
+    <div class="img-box">
+      <img src="/FOTOS/img/DSC_0521.jpg" alt="image 4">
+    </div>
+    <div class="img-box">
+      <img src="/FOTOS/img/DSC_0420.jpg" alt="image 5">
+    </div>
+    <div class="img-box">
+      <img src="/FOTOS/img/DSC_0063.JPG" alt="image 6">
+    </div>
+  </div>
+
+
+<!-- galeria 2 -->
+  <div class="gallery-container-2">
+    <div class="img-box-2" onclick="openModal();currentSlide(1)">
+      <img src="/FOTOS/img/52107223621_fa2da065f9_k.jpg" alt="image 1">
+    </div>
+    <div class="img-box-2" onclick="openModal();currentSlide(2)">
+      <img src="/FOTOS/img/52107223711_17a7dab0ff_k.jpg" alt="image 2">
+    </div>
+    <div class="img-box-2" onclick="openModal();currentSlide(3)">
+      <img src="/FOTOS/img/52107223711_17a7dab0ff_k.jpg" alt="image 3">
+    </div>
+    <div class="img-box-2" onclick="openModal();currentSlide(4)">
+      <img src="/FOTOS/img/52107257803_eb6ff46a4d_k.jpg" alt="image 4">
+    </div>
+    <div class="img-box-2" onclick="openModal();currentSlide(5)">
+      <img src="/FOTOS/img/52107733105_56d22cddb6_k.jpg" alt="image 5">
+    </div>
+    <div class="img-box-2" onclick="openModal();currentSlide(6)">
+      <img src="/FOTOS/img/52107473179_8840fbc27c_k.jpg" alt="image 6">
+    </div>
+
+    <div class="img-box-2" onclick="openModal();currentSlide(6)">
+      <img src="/FOTOS/img/52107736475_e6f53133c9_k.jpg" alt="image 7">
+    </div>
+
+    <div class="img-box-2" onclick="openModal();currentSlide(6)">
+      <img src="/FOTOS/img/52107739255_5ddc79afea_k.jpg" alt="image 8">
+    </div>
+  </div>
+  
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <img src="/FOTOS/img/52107223621_fa2da065f9_k.jpg" alt="image 1">
+      </div>
+      <div class="mySlides">
+        <img src="/FOTOS/img/52107223711_17a7dab0ff_k.jpg" alt="image 2">
+      </div>
+      <div class="mySlides">
+        <img src="/FOTOS/img/52107223711_17a7dab0ff_k.jpg" alt="image 3">
+      </div>
+      <div class="mySlides">
+        <img src="/FOTOS/img/52107257803_eb6ff46a4d_k.jpg" alt="image 4">
+      </div>
+      <div class="mySlides">
+        <img src="/FOTOS/img/52107733105_56d22cddb6_k.jpg" alt="image 5">
+      </div>
+      <div class="mySlides">
+        <img src="/FOTOS/img/52107473179_8840fbc27c_k.jpg" alt="image 6">
+      </div>
+
+      <div class="mySlides">
+        <img src="/FOTOS/img/52107736475_e6f53133c9_k.jpg" alt="image 7">
+      </div>
+
+      <div class="mySlides">
+        <img src="/FOTOS/img/52107739255_5ddc79afea_k.jpg" alt="image 8">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+  </div>
+  
+  <footer>
+    <h1>sandra barrachina code 2023</h1>
+  </footer>
+
+      <script type="text/javascript" src="/FOTOS/index.js"></script>
+
+</body>
+</html>
