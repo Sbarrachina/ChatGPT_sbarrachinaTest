@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Gallery</title>
+    <title>Photo Gallery</title>
     <link rel="stylesheet" href="/FOTOS/main.css">
 </head>
 <body>
@@ -66,7 +66,9 @@
   </div>
   
   <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
+   
+    <span class="close cursor" id="close-modal" onclick="closeModal()" ontouchstart="closeModal()">&times;</span>
+
     <div class="modal-content">
       <div class="mySlides">
         <img src="/FOTOS/img/52107223621_fa2da065f9_k.jpg" alt="image 1">
@@ -99,6 +101,106 @@
 
     </div>
   </div>
+
+
+<!-- galeria 3  -->
+
+<div class="filters">
+  <button class="filter" data-category="all">Todas</button>
+  <button class="filter" data-category="category1">Barcelona</button>
+  <button class="filter" data-category="category2">Altafulla</button>
+  <button class="filter" data-category="category3">Torredembarra</button>
+</div>
+
+<div class="gallery-container-3">
+  <div class="img-box-3" data-category="category1">
+    <img src="/FOTOS/img/barcelona/DSC_0059.JPG" alt="image 1">
+  </div>
+  <div class="img-box-3" data-category="category2">
+    <img src="/FOTOS/img/altafulla/DSC_0292.jpg" alt="image 2">
+  </div>
+  <div class="img-box-3" data-category="category3">
+    <img src="/FOTOS/img/Torrdambarra/DSC_0139.jpg" alt="image 3">
+  </div>
+  <div class="img-box-3" data-category="category1">
+    <img src="/FOTOS/img/barcelona/DSC_0064.JPG" alt="image 4">
+  </div>
+  <div class="img-box-3" data-category="category3">
+    <img src="/FOTOS/img/Torrdambarra/DSC_0145.jpg" alt="image 5">
+      </div>
+
+      <div class="img-box-3" data-category="category2">
+        <img src="/FOTOS/img/52107223711_17a7dab0ff_k.jpg" alt="image 5">
+          </div>
+    
+
+          <div class="img-box-3" data-category="category1">
+            <img src="/FOTOS/img/barcelona/DSC_0070.JPG" alt="image 1">
+          </div>
+          <div class="img-box-3" data-category="category2">
+            <img src="/FOTOS/img/altafulla/DSC_0320.jpg" alt="image 2">
+          </div>
+          <div class="img-box-3" data-category="category3">
+            <img src="/FOTOS/img/Torrdambarra/DSC_0248.jpg" alt="image 3">
+          </div>
+
+
+
+
+          <div class="img-box-3" data-category="category3">
+            <img src="/FOTOS/img/Torrdambarra/DSC_0254.jpg" alt="image 1">
+          </div>
+          <div class="img-box-3" data-category="category2">
+            <img src="/FOTOS/img/altafulla/DSC_0342.jpg" alt="image 2">
+          </div>
+          <div class="img-box-3" data-category="category1">
+            <img src="/FOTOS/img/barcelona/DSC_0095.JPG" alt="image 3">
+          </div>
+
+
+
+          <div class="img-box-3" data-category="category1">
+            <img src="/FOTOS/img/barcelona/DSC_0108.JPG" alt="image 1">
+          </div>
+          <div class="img-box-3" data-category="category2">
+            <img src="/FOTOS/img/altafulla/DSC_0365.jpg" alt="image 2">
+          </div>
+          <div class="img-box-3" data-category="category3">
+            <img src="/FOTOS/img/Torrdambarra/DSC_0272.jpg" alt="image 3">
+          </div>
+
+
+          <div class="img-box-3" data-category="category3">
+            <img src="/FOTOS/img/Torrdambarra/DSC_0273.jpg" alt="image 1">
+          </div>
+          <div class="img-box-3" data-category="category2">
+            <img src="/FOTOS/img/altafulla/DSC_0369.jpg" alt="image 2">
+          </div>
+          <div class="img-box-3" data-category="category1">
+            <img src="/FOTOS/img/barcelona/DSC_0121.JPG" alt="image 3">
+          </div>
+
+
+          <div class="img-box-3" data-category="category3">
+            <img src="/FOTOS/img/Torrdambarra/DSC_0278.jpg" alt="image 1">
+          </div>
+          <div class="img-box-3" data-category="category2">
+            <img src="/FOTOS/img/altafulla/DSC_0406.jpg" alt="image 2">
+          </div>
+
+          <div class="modal" id="modal">
+            <div class="modal-content-3">
+              <span class="close" id="close">&times;</span>
+              <img id="modal-img" src="">
+            </div>
+            <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+          </div>
+
+    </div>
+    
+   
+
   
   <footer>
     <h1>sandra barrachina code 2023</h1>
@@ -108,3 +210,4 @@
 
 </body>
 </html>
+
